@@ -29,7 +29,14 @@ in
       };
     };
   };
-  
+
+  home-manager = {
+    extraSpecialArgs = {inherit inputs;};
+    users = {
+      "isaac" = import ./home.nix
+    };
+  };
+
   # You can import other NixOS modules here
   imports = [
     # If you want to use modules from other flakes (such as nixos-hardware):
