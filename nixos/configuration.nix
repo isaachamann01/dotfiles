@@ -30,12 +30,12 @@ in
     };
   };
 
-  home-manager = {
-    extraSpecialArgs = {inherit inputs;};
-    users = {
-      "isaac" = import ./home.nix;
-    };
-  };
+  #home-manager = {
+  #  extraSpecialArgs = {inherit inputs;};
+  #  users = {
+  #    "isaac" = import ./home.nix;
+  #  };
+  #};
 
   # You can import other NixOS modules here
   imports = [
