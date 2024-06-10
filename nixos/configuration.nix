@@ -33,7 +33,7 @@ in
   home-manager = {
     extraSpecialArgs = {inherit inputs;};
     users = {
-      "isaac" = import ./home.nix
+      "isaac" = import ./home.nix;
     };
   };
 
