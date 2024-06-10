@@ -6,7 +6,30 @@
   config,
   pkgs,
   ...
-}: {
+}: 
+
+let
+  tuigreet = "${pkgs.greetd.tuigreet}/bin/tuigreet";
+  session = "${pkgs.hyprland}/bin/Hyprland";
+  username = "user";
+in
+
+{
+
+  services.greetd = {
+    enable = true;
+    settings = {
+      initial_session = {
+        command = "${session}";
+        user = "${username}";
+      };
+      default_session = {
+        command = "${tuigreet} --greeting 'Welcome to NixOS!' --asterisks --remember --remember-user-session --time -cmd ${session}";
+        user = "greeter";
+      };
+    };
+  };
+  
   # You can import other NixOS modules here
   imports = [
     # If you want to use modules from other flakes (such as nixos-hardware):
@@ -20,9 +43,9 @@
     ./hardware-configuration.nix
   ];
 
-  nixpkgs = {
+  #nixpkgs = {
     # You can add overlays here
-    overlays = [
+    #overlays = [
       # If you want to use overlays exported from other flakes:
       # neovim-nightly-overlay.overlays.default
 
@@ -32,13 +55,13 @@
       #     patches = [ ./change-hello-to-hi.patch ];
       #   });
       # })
-    ];
+    #];
     # Configure your nixpkgs instance
-    config = {
+    #config = {
       # Disable if you don't want unfree packages
-      allowUnfree = true;
-    };
-  };
+      #allowUnfree = true;
+    #};
+  #};
 
   nix = let
     flakeInputs = lib.filterAttrs (_: lib.isType "flake") inputs;
@@ -72,19 +95,19 @@
   i18n.defaultLocale = "en_US.UTF-8";
 
   # XSERVER  
-  #services.xserver = {
+  services.xserver = {
 	#enable = true;
 	#displayManager.sddm.enable = true;
 	#desktopManager.gnome.enable = true;
-  #videoDrivers = ["nvidia"];
-  #};
+  videoDrivers = ["nvidia"];
+  };
 
   # HYPRLAND
   programs.hyprland = {
     enable = true;
     enableNvidiaPatches = true;
     xwayland.enable = true;
-  }
+  };
  
   # OPENGL
   hardware.opengl = {
