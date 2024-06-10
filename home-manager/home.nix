@@ -17,19 +17,6 @@
     # ./nvim.nix
   ];
 
-  wayland.windowManager.hyprland = {
-    enable = true;
-    settings = {
-      "$mod" = "SUPER";
-      bind = [
-        "$mod, Q, exec, kitty"
-        "$mod, P, exec, code"
-
-      ]
-    };
-    exec-once = kitty;
-  }
-
   nixpkgs = {
     # You can add overlays here
     overlays = [
