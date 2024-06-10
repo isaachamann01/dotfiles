@@ -11,7 +11,7 @@
 let
   tuigreet = "${pkgs.greetd.tuigreet}/bin/tuigreet";
   session = "${pkgs.hyprland}/bin/Hyprland";
-  username = "user";
+  username = "isaac";
 in
 
 {
