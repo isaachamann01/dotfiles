@@ -52,6 +52,12 @@
      rofi
   ];
 
+  (brave.override {
+    commandLineArgs = [
+      "--ozone-platorm-hit=auto"
+    ];
+  })
+
   home = {
     username = "isaac";
     homeDirectory = "/home/isaac";
