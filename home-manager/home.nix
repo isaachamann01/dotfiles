@@ -429,43 +429,43 @@ window#waybar {
 	];
 
 	"custom/left-arrow-dark"= {
-		"format"= ""
-		"tooltip"= false
+		"format"= "";
+		"tooltip"= false;
 	};
 
 	"custom/left-arrow-light"= {
-		"format"= ""
-		"tooltip"= false
+		"format"= "";
+		"tooltip"= false;
 	};
 
 	"custom/right-arrow-dark"= {
-		"format"= ""
-		"tooltip"= false
+		"format"= "";
+		"tooltip"= false;
 	};
 
 	"custom/right-arrow-light"= {
-		"format"= "",
-		"tooltip"= false
+		"format"= "";
+		"tooltip"= false;
 	};
 
 	"sway/workspaces"= {
-		"disable-scroll"= true,
-		"format"= "{name}"
+		"disable-scroll"= true;
+		"format"= "{name}";
 	};
 
 	"clock#1"= {
-		"format"= "{=%a}",
-		"tooltip"= false
+		"format"= "{=%a}";
+		"tooltip"= false;
 	};
 
 	"clock#2"= {
-		"format"= "{=%H=%M}",
-		"tooltip"= false
+		"format"= "{=%H=%M}";
+		"tooltip"= false;
 	};
 
 	"clock#3"= {
-		"format"= "{=%m-%d}",
-		"tooltip"= false
+		"format"= "{=%m-%d}";
+		"tooltip"= false;
 	};
 
 	"pulseaudio"= {
