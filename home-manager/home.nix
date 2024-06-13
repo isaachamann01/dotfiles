@@ -106,10 +106,10 @@
     # exec-once = wallpaper_random
 
     # Set en layout at startup
-
+    console.keyMap = 'us';
     # Input config
     input {
-        kb_layout = br,us
+        kb_layout = us
         kb_variant =
         kb_model =
         kb_options =
@@ -596,5 +596,5 @@
     };
   };
 
-
+  #home-manager.users.mentos.programs.vscode =
 }
