@@ -469,55 +469,55 @@ window#waybar {
 	};
 
 	"pulseaudio"= {
-		"format"= "{icon} {volume=2}%"
-		"format-bluetooth"= "{icon}  {volume}%"
-		"format-muted"= "MUTE"
+		"format"= "{icon} {volume=2}%";
+		"format-bluetooth"= "{icon}  {volume}%";
+		"format-muted"= "MUTE";
 		"format-icons"= {
-			"headphones"= ""
+			"headphones"= "";
 			"default"= [
-				"",
+				""
 				""
-			]
+			];
 		};
 
-		"scroll-step"= 5
-		"on-click"= "pamixer -t"
-		"on-click-right"= "pavucontrol
+		"scroll-step"= 5;
+		"on-click"= "pamixer -t";
+		"on-click-right"= "pavucontrol;
 	};
 
 	"memory"= {
-		"interval"= 5
-		"format"= "Mem {}%"
+		"interval"= 5;
+		"format"= "Mem {}%";
 	};
 
 	"cpu"= {
-		"interval"= 5,
-		"format"= "CPU {usage=2}%"
+		"interval"= 5;
+		"format"= "CPU {usage=2}%";
 	};
 
 	"battery"= {
 		"states"= {
-			"good"= 95
-			"warning"= 30
-			"critical"= 15
+			"good"= 95;
+			"warning"= 30;
+			"critical"= 15;
 		};
 
-		"format"= "{icon} {capacity}%"
+		"format"= "{icon} {capacity}%";
 		"format-icons"= [
-			"",
-			"",
-			"",
-			"",
+			""
+			""
+			""
+			""
 			""
 		];
 	};
 	"disk"= {
-		"interval"= 5
-		"format"= "Disk {percentage_used=2}%"
-		"path"= "/"
+		"interval"= 5;
+		"format"= "Disk {percentage_used=2}%";
+		"path"= "/";
 	};
 	"tray"= {
-		"icon-size"= 20
+		"icon-size"= 20;
 	};
 }];
     };
