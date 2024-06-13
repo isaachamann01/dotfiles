@@ -386,7 +386,7 @@ window#waybar {
 #disk {
 	padding: 0 10px;
 }
-      '';
+'';
       settings = [{
 	"layer" = "top";
 	"position"= "bottom";
@@ -405,7 +405,7 @@ window#waybar {
 		"custom/right-arrow-dark"
 		"custom/right-arrow-light"
 		"clock#3"
-		"custom/right-arrow-dark
+		"custom/right-arrow-dark"
 	];
 
 	"modules-right"= [
@@ -429,7 +429,7 @@ window#waybar {
 	];
 
 	"custom/left-arrow-dark"= {
-		#"format"= "";
+		"format"= "";
 		"tooltip"= false;
 	};
 
