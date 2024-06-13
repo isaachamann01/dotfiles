@@ -106,10 +106,10 @@
     # exec-once = wallpaper_random
 
     # Set en layout at startup
-    console.keyMap = 'us';
+    
     # Input config
     input {
-        kb_layout = us
+        kb_layout = us,fr
         kb_variant =
         kb_model =
         kb_options =
@@ -596,5 +596,14 @@
     };
   };
 
-  #home-manager.users.mentos.programs.vscode =
+ programs.vscode = {
+  	enable = true;
+	enableUpdateCheck = false;
+	enableExtensionUpdateCheck = false;
+	mutableExtensionsDir = false;
+
+	userSettings = {
+		"window.titleBarStyle"="custom";
+	};
+  };
 }
