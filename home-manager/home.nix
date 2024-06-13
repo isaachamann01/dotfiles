@@ -38,7 +38,7 @@
      kitty
      waybar
      swww
-  ]
+  ];
 
   home = {
     username = "isaac";
@@ -266,10 +266,9 @@
         '';
   };
 
-    # home.file.".config/hypr/colors".text = ''
+    home.file.".config/hypr/colors".text = ''
     $background = rgba(1d192bee)
     $foreground = rgba(c3dde7ee)
-
     $color0 = rgba(1d192bee)
     $color1 = rgba(465EA7ee)
     $color2 = rgba(5A89B6ee)

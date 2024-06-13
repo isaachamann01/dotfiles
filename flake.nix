@@ -13,7 +13,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
-
+  #dss
   outputs = inputs@{ nixpkgs, home-manager, ... }: {
     nixosConfigurations = {
       # TODO please change the hostname to your own
@@ -26,11 +26,11 @@
           # so that home-manager configuration will be deployed automatically when executing `nixos-rebuild switch`
           home-manager.nixosModules.home-manager
           {
-            home-manager.useGlobalPkgs = true;
+            #home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
 
             # TODO replace ryan with your own username
-            home-manager.users.isaac = import .home-manager/home.nix;
+            home-manager.users.isaac = import ./home-manager/home.nix;
 
             # Optionally, use home-manager.extraSpecialArgs to pass arguments to home.nix
           }
