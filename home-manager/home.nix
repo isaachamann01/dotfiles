@@ -141,7 +141,7 @@
         blur = true
         blur_size = 3
         blur_passes = 1
-        blur_new_optimizations = true
+        #blur_new_optimizations = true
 
         drop_shadow = true
         shadow_range = 4
@@ -206,7 +206,7 @@
     bind = $mainMod, J, togglesplit, # dwindle
 
     # Switch Keyboard Layouts
-    bind = $mainMod, SPACE, exec, hyprctl switchxkblayout teclado-gamer-husky-blizzard next
+    #bind = $mainMod, SPACE, exec, hyprctl switchxkblayout teclado-gamer-husky-blizzard next
 
     bind = , Print, exec, grim -g "$(slurp)" - | wl-copy
     bind = SHIFT, Print, exec, grim -g "$(slurp)"
