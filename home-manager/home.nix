@@ -429,7 +429,7 @@ window#waybar {
 	];
 
 	"custom/left-arrow-dark"= {
-		"format"= "";
+		#"format"= "";
 		"tooltip"= false;
 	};
 
