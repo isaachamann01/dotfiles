@@ -8,6 +8,16 @@
   ...
 }: {
 
+  # This makes vscode run on wayland at startup rather than some other buggy crap.
+#  (final: prev: {
+#  vscode = prev.vscode.overrideAttrs (oldAttrs: {
+#    postInstall = (oldAttrs.postInstall or "") + ''
+#      substituteInPlace $out/share/applications/vscode.desktop \
+#        --replace "/bin/code %U" "/bin/code %U --disable-smooth-scrolling"
+#    '';
+#  });
+#})
+
   # You can import other home-manager modules here
   imports = [
     # If you want to use home-manager modules from other flakes (such as nix-colors):
@@ -38,6 +48,8 @@
      kitty
      waybar
      swww
+     wofi
+     rofi
   ];
 
   home = {
@@ -90,6 +102,7 @@
 
     # Monitor
     # monitor=DP-1,1920x1080@165,auto,1
+
 
     # Fix slow startup
     #exec systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
