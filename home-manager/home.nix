@@ -65,6 +65,7 @@
       pygobject3 gst-python
     ]))
     steam
+    pavucontrol
   ];
 
   # PYTHON CONFIG
