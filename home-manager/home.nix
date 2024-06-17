@@ -65,7 +65,7 @@
     (python3.withPackages (p: with p; [
       #pygobject3
       #gst-python
-      tensorflow
+      tensorflowWithCuda
       python-binance
       #mysql-connector
       pandas
