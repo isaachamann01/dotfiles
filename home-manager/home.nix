@@ -61,12 +61,13 @@
      #python311Packages.gi
      gtk4
      gst_all_1.gstreamer
+     myspl
     (python3.withPackages (p: with p; [
       pygobject3
       gst-python
       tensorflow
       python-binance
-      mysql-connector-python
+      mysql-connector
       pandas
       numpy
       datetime
