@@ -510,7 +510,7 @@ settings = [{
     "modules-right" = ["custom/spotify" "idle_inhibitor" "temperature" "cpu" "memory" "network" "pulseaudio" "backlight" "keyboard-state" "tray" "clock"];
     
     "custom/spotify" = {
-    "exec" = "/usr/bin/python3 ~/mediaplayer.py --player spotify";
+    "exec" = "/etc/profiles/per-user/isaac/bin/python ~/mediaplayer.py --player spotify";
     "format" = "{}  ";
     "return-type" = "json";
     "on-click" = "playerctl play-pause";
