@@ -67,9 +67,9 @@
       #gst-python
       tensorflow
       python-binance
-      #mysql-connector
-      #pandas
-      #numpy
+      mysql-connector
+      pandas
+      numpy
       #datetime
     ]))
     steam
