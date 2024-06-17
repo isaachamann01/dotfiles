@@ -489,6 +489,7 @@ label:focus {
 }
 '';
       settings = [{
+        {
 	  "layer" = "top"; // Waybar at top layer
     "position"= "bottom"; // Waybar position (top|bottom|left|right)
     "height"= 24; // Waybar height (to be removed for auto height)
@@ -638,7 +639,8 @@ label:focus {
         "escape" = true;
         "exec" = "$HOME/.config/waybar/mediaplayer.py 2> /dev/null"; // Script in resources folder
         // "exec" = "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null"; // Filter player based on name
-    }
+    };
+  }
 }];
 };
 
