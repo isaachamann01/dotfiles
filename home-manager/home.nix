@@ -68,8 +68,8 @@
       tensorflow
       python-binance
       mysql-connector
-      pandas
-      numpy
+      #pandas
+      #numpy
       #datetime
     ]))
     steam
