@@ -47,7 +47,7 @@
      brave
      kitty
      waybar
-     swww
+     hyprpaper
      wofi
      rofi
      pamixer
@@ -57,7 +57,7 @@
      gobject-introspection
      playerctl
      #python311Packages.gi
-     gtk3
+     gtk4
      gst_all_1.gstreamer
     (python3.withPackages (p: with p; [
       pygobject3 gst-python
