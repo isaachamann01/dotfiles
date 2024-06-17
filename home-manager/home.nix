@@ -393,7 +393,7 @@ window#waybar {
 	"position"= "bottom";
 
 	"modules-left" = [
-		"sway/workspaces"
+		"hyprland/workspaces"
 		"custom/right-arrow-dark"
 	];
 
