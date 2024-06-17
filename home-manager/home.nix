@@ -63,8 +63,8 @@
      gst_all_1.gstreamer
      mysql
     (python3.withPackages (p: with p; [
-      pygobject3
-      gst-python
+      #pygobject3
+      #gst-python
       tensorflow
       python-binance
       mysql-connector
