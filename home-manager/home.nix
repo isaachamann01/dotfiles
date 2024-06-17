@@ -55,7 +55,7 @@
      #python3
      spotify
      gobject-introspection
-     Playerctl
+     playerctl
      #python311Packages.gi
      gtk3
      gst_all_1.gstreamer
