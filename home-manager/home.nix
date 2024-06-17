@@ -490,33 +490,16 @@ label:focus {
 '';
 settings = [{
         
-	  "layer" = "top"; // Waybar at top layer
-    "position"= "bottom"; // Waybar position (top|bottom|left|right)
-    "height"= 24; // Waybar height (to be removed for auto height)
-    "width" = 1280; // Waybar width
-    "spacing" = 4; // Gaps between modules (4px)
-    // Choose the order of the modules
+	  "layer" = "top"; 
+    "position"= "bottom"; 
+    "height"= 24; 
+    "width" = 1280; 
+    "spacing" = 4; 
     "modules-left" = ["hyprland/workspaces" "hyprland/mode" "hyprland/scratchpad" "custom/media"];
     "modules-center" = ["hyprland/window"];
     "modules-right" = ["mpd" "idle_inhibitor" "temperature" "cpu" "memory" "network" "pulseaudio" "backlight" "keyboard-state" "tray" "clock"];
     
-    // Modules configuration
-    // "sway/workspaces" = {
-    //     "disable-scroll" = true;
-    //     "all-outputs" = true;
-    //     "warp-on-scroll" = false;
-    //     "format" = "{name} = {icon}";
-    //     "format-icons" = {
-    //         "1" = "";
-    //         "2" = "";
-    //         "3" = "";
-    //         "4" = "";
-    //         "5" = "";
-    //         "urgent" = "";
-    //         "focused" = "";
-    //         "default" = ""
-    //     }
-    // };
+
 
     "keyboard-state" = {
         "numlock" = true;
@@ -575,15 +558,15 @@ settings = [{
         }
     };
     "tray" = {
-        // "icon-size" = 21;
+
         "spacing" = 10;
     };
     "clock" = {
-        // "timezone" = "America/New_York";
+
         "tooltip-format" = "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>";
-        //"format-alt" = "{:%Y-%m-%d}"
+
         "format" = "{:L%Y-%m-%d<small>[%a]</small> <tt><small>%p</small></tt>%I:%M}";
-        //"format" = "{:%Y-%m-%d %H:%M}"
+
     };
     "cpu" = {
         "format" = " {usage}%";
@@ -600,13 +583,11 @@ settings = [{
         "format-icons" = ["" "" ""];
     };
     "backlight" = {
-        // "device" = "acpi_video1";
         "format" = "{icon} {percent}%";
         "format-icons" = ["" "" "" "" "" "" "" "" ""];
     };
    
     "network" = {
-        // "interface" = "wlp2*"; // (Optional) To force the use of this interface
         "format-wifi" = "{essid} ({signalStrength}%) ";
         "format-ethernet" = " {ifname}";
         "tooltip-format" = " {ifname} via {gwaddr}";
@@ -638,7 +619,6 @@ settings = [{
         };
         "escape" = true;
         "exec" = "$HOME/.config/waybar/mediaplayer.py 2> /dev/null"; // Script in resources folder
-        // "exec" = "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null"; // Filter player based on name
     };
   
 }];
