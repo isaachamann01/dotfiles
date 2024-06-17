@@ -526,9 +526,9 @@ settings = [{
     "height"= 24; 
     "width" = 1280; 
     "spacing" = 4; 
-    "modules-left" = ["hyprland/workspaces" "custom/media"];
+    "modules-left" = ["bluetooth" "custom/media"];
     "modules-center" = ["hyprland/window"];
-    "modules-right" = ["custom/spotify" "idle_inhibitor" "temperature" "cpu" "memory" "network" "pulseaudio" "backlight" "keyboard-state" "tray" "clock"];
+    "modules-right" = ["idle_inhibitor" "temperature" "cpu" "memory" "network" "pulseaudio" "backlight" "keyboard-state" "tray" "clock"];
     
     "bluetooth" = {
       "format" = " {status}";
