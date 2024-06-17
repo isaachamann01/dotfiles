@@ -555,7 +555,7 @@ settings = [{
         "format-icons" = {
             "activated" = "";
             "deactivated" = "";
-        }
+        };
     };
     "tray" = {
 
