@@ -54,8 +54,11 @@
      nerdfonts
      python3
      spotify
-     python311Packages.pip
+     python311Packages.gi
   ];
+
+  # PYTHON CONFIG
+
 
 
   home = {
