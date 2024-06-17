@@ -495,7 +495,7 @@ settings = [{
     "height"= 24; 
     "width" = 1280; 
     "spacing" = 4; 
-    "modules-left" = ["hyprland/workspaces" "hyprland/mode" "hyprland/scratchpad" "custom/media"];
+    "modules-left" = ["hyprland/workspaces" "custom/media"];
     "modules-center" = ["hyprland/window"];
     "modules-right" = ["mpd" "idle_inhibitor" "temperature" "cpu" "memory" "network" "pulseaudio" "backlight" "keyboard-state" "tray" "clock"];
     
@@ -508,18 +508,18 @@ settings = [{
         "format-icons" = {
             "locked" = "";
             "unlocked" = "";
-        }
+        };
     };
-    "sway/mode" = {
-        "format" = "<span style=\"italic\">{}</span>"
-    };
-    "sway/scratchpad" = {
-        "format" = "{icon} {count}";
-        "show-empty" = false;
-        "format-icons" = ["" ""];
-        "tooltip" = true;
-        "tooltip-format" = "{app} = {title}";
-    };
+    #"sway/mode" = {
+    #    "format" = "<span style=\"italic\">{}</span>"
+    #};
+    #"sway/scratchpad" = {
+    #    "format" = "{icon} {count}";
+    #    "show-empty" = false;
+    #    "format-icons" = ["" ""];
+    #    "tooltip" = true;
+    #    "tooltip-format" = "{app} = {title}";
+    #};
     "mpd" = {
         "format" = "  {title} - {artist} {stateIcon} [{elapsedTime:%M:%S}/{totalTime:%M:%S}] {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}[{songPosition}/{queueLength}] [{volume}%]";
         "format-disconnected" = " Disconnected";
