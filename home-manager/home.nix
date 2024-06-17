@@ -41,8 +41,8 @@
     };
   };
 
-  services.blueman.enable = true;
-  
+
+
   home.packages = with pkgs; [
      vscode
      dolphin
