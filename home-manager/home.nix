@@ -331,7 +331,7 @@ window#waybar {
 #custom-right-arrow-light,
 #custom-left-arrow-light {
 	color: #292b2e;
-	background: #1a1a1a;
+	background: #292b2e;
 }
 
 #workspaces,
@@ -344,22 +344,22 @@ window#waybar {
 #battery,
 #disk,
 #tray {
-	background: #1a1a1a;
+	background: #292b2e;
 }
 
 #workspaces button {
 	padding: 0 2px;
-	color: #fdf6e3;
+	color: #292b2e;
 }
 #workspaces button.focused {
-	color: #268bd2;
+	color: #292b2e;
 }
 #workspaces button:hover {
 	box-shadow: inherit;
 	text-shadow: inherit;
 }
 #workspaces button:hover {
-	background: #1a1a1a;
+	background: #292b2e;
 	border: #1a1a1a;
 	padding: 0 3px;
 }
