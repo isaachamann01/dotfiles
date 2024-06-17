@@ -54,7 +54,8 @@
      nerdfonts
      python3
      spotify
-     python311Packages.gi
+     pkgs.gobject-introspection
+     #python311Packages.gi
   ];
 
   # PYTHON CONFIG
