@@ -739,7 +739,4 @@ settings = [{
 	};
   };
 
-  services.hyprpaper = {
-    enable = true; 
-  };
 }
