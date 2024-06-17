@@ -454,17 +454,17 @@ window#waybar {
 	};
 
 	"clock#1"= {
-		"format"= "{=%a}";
+		"format"= "{:%a}";
 		"tooltip"= false;
 	};
 
 	"clock#2"= {
-		"format"= "{=%H=%M}";
+		"format"= "{:%H:%M}";
 		"tooltip"= false;
 	};
 
 	"clock#3"= {
-		"format"= "{=%m-%d}";
+		"format"= "{:%m-%d}";
 		"tooltip"= false;
 	};
 
