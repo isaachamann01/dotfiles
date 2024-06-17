@@ -51,6 +51,7 @@
      wofi
      rofi
      pamixer
+     nerdfonts
   ];
 
 
