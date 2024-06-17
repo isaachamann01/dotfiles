@@ -126,8 +126,13 @@
 
     # Autostart
 
+    #Hyprpaper
+    preload = ~/wallpaper.png
+    wallpaper = monitor,~/wallpaper.png
+
     exec-once = hyprctl setcursor Bibata-Modern-Classic 24
     exec-once = dunst
+    exec-once = hyprpaper
 
     #source = /home/enzo/.config/hypr/colors
     exec = pkill waybar & sleep 0.5 && waybar
