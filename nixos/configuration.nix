@@ -30,7 +30,8 @@ in
     };
   };
   
-  services.blueman.enable = true;
+  hardware.pulseaudio.enable = true;
+  hardware.bluetooth.enable = true;
 
   #home-manager = {
   #  extraSpecialArgs = {inherit inputs;};
@@ -126,7 +127,7 @@ in
 
   # SOUND
   sound.enable = true;
-  hardware.pulseaudio.enable = true;
+  #hardware.pulseaudio.enable = true;
 
   # USERS - Just Isaac for now.
    users.users.isaac = {
