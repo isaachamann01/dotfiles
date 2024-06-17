@@ -509,7 +509,7 @@ settings = [{
     "modules-center" = ["hyprland/window"];
     "modules-right" = ["custom/spotify" "idle_inhibitor" "temperature" "cpu" "memory" "network" "pulseaudio" "backlight" "keyboard-state" "tray" "clock"];
     
-    "custom/spotify": {
+    "custom/spotify" = {
     "exec" = "/usr/bin/python3 ~/mediaplayer.py --player spotify";
     "format" = "{}  ";
     "return-type" = "json";
