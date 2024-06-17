@@ -314,7 +314,7 @@
       };
       style = ''
 * {
-	font-size: 10px;
+	font-size: 15px;
 	font-family: monospace;
 }
 
@@ -325,8 +325,9 @@ window#waybar {
 
 #custom-right-arrow-dark,
 #custom-left-arrow-dark {
-	color: #1a1a1a;
+	color: #FFFFFF;
 }
+
 #custom-right-arrow-light,
 #custom-left-arrow-light {
 	color: #292b2e;
