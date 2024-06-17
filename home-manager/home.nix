@@ -67,10 +67,10 @@
       #gst-python
       tensorflow
       python-binance
-      mysql-connector
-      #pandas
-      #numpy
-      #datetime
+      #mysql-connector
+      pandas
+      numpy
+      datetime
     ]))
     steam
     pavucontrol
