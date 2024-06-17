@@ -50,6 +50,7 @@
      swww
      wofi
      rofi
+     pamixer
   ];
 
 
@@ -448,7 +449,7 @@ window#waybar {
 		"tooltip"= false;
 	};
 
-	"sway/workspaces"= {
+	"hyprland/workspaces"= {
 		"disable-scroll"= true;
 		"format"= "{name}";
 	};
@@ -495,22 +496,6 @@ window#waybar {
 		"format"= "CPU {usage}%";
 	};
 
-	"battery"= {
-		"states"= {
-			"good"= 95;
-			"warning"= 30;
-			"critical"= 15;
-		};
-
-		"format"= "{icon} {capacity}%";
-		"format-icons"= [
-			""
-			""
-			""
-			""
-			""
-		];
-	};
 	"disk"= {
 		"interval"= 5;
 		"format"= "Disk {percentage_used}%";
