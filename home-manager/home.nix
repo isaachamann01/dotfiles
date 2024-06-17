@@ -313,8 +313,8 @@
         target = "graphical-session.target";
       };
       style = ''
-               * {
-	font-size: 20px;
+* {
+	font-size: 10px;
 	font-family: monospace;
 }
 
