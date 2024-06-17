@@ -738,7 +738,7 @@ settings = [{
 	};
   };
 
-  services.hyperpaper = {
+  programs.hyperpaper = {
     enable = true; 
   };
 }
