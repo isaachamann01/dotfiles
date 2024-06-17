@@ -510,12 +510,12 @@ settings = [{
     "modules-right" = ["custom/spotify" "idle_inhibitor" "temperature" "cpu" "memory" "network" "pulseaudio" "backlight" "keyboard-state" "tray" "clock"];
     
     "custom/spotify": {
-    "exec" = "/usr/bin/python3 ~/mediaplayer.py --player spotify"
-    "format" = "{}  "
-    "return-type" = "json"
-    "on-click" = "playerctl play-pause"
-    "on-scroll-up" = "playerctl next"
-    "on-scroll-down" = "playerctl previous"
+    "exec" = "/usr/bin/python3 ~/mediaplayer.py --player spotify";
+    "format" = "{}  ";
+    "return-type" = "json";
+    "on-click" = "playerctl play-pause";
+    "on-scroll-up" = "playerctl next";
+    "on-scroll-down" = "playerctl previous";
     };
 
     "keyboard-state" = {
