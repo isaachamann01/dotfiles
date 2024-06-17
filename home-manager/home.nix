@@ -403,6 +403,14 @@ button:hover {
   border-bottom: 3px solid #ffffff;
 }
 
+#bluetooth,
+#bluetooth.disabled,
+#bluetooth.off,
+#bluetooth.on,
+#bluetooth.connected,
+#bluetooth.discoverable,
+#bluetooth.discovering,
+#bluetooth.pairable,
 #clock,
 #battery,
 #cpu,
@@ -522,13 +530,15 @@ settings = [{
     "modules-center" = ["hyprland/window"];
     "modules-right" = ["custom/spotify" "idle_inhibitor" "temperature" "cpu" "memory" "network" "pulseaudio" "backlight" "keyboard-state" "tray" "clock"];
     
-    "custom/spotify" = {
-    "exec" = "/etc/profiles/per-user/isaac/bin/python ~/mediaplayer.py --player spotify";
-    "format" = "{}  ";
-    "return-type" = "json";
-    "on-click" = "playerctl play-pause";
-    "on-scroll-up" = "playerctl next";
-    "on-scroll-down" = "playerctl previous";
+    "bluetooth" = {
+      "format" = " {status}";
+      "format-connected" = " {device_alias}";
+      "format-connected-battery" = " {device_alias} {device_battery_percentage}%";
+      # "format-device-preference" = [ "device1", "device2" ], // preference list deciding the displayed device
+      "tooltip-format" = "{controller_alias}\t{controller_address}\n\n{num_connections} connected";
+      "tooltip-format-connected" = "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}";
+      "tooltip-format-enumerate-connected" = "{device_alias}\t{device_address}";
+      "tooltip-format-enumerate-connected-battery" = "{device_alias}\t{device_address}\t{device_battery_percentage}%";
     };
 
     "keyboard-state" = {
@@ -550,36 +560,7 @@ settings = [{
     #    "tooltip" = true;
     #    "tooltip-format" = "{app} = {title}";
     #};
-    "mpd" = {
-        "format" = "  {title} - {artist} {stateIcon} [{elapsedTime:%M:%S}/{totalTime:%M:%S}] {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}[{songPosition}/{queueLength}] [{volume}%]";
-        "format-disconnected" = " Disconnected";
-        "format-stopped" = " {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}Stopped";
-        "unknown-tag" = "N/A";
-        "interval" = 2;
-        "consume-icons" = {
-            "on" = " ";
-        };
-        "random-icons" = {
-            "on" = " ";
-        };
-        "repeat-icons" = {
-            "on" = " ";
-        };
-        "single-icons" = {
-            "on" = "1 ";
-        };
-        "state-icons" = {
-            "paused" = "";
-            "playing" = "";
-        };
-        "tooltip-format" = "MPD (connected)";
-        "tooltip-format-disconnected" = "MPD (disconnected)";
-        "on-click" = "mpc toggle";
-        "on-click-right" = "foot -a ncmpcpp ncmpcpp";
-        "on-scroll-up" = "mpc volume +2";
-        "on-scroll-down" = "mpc volume -2";
-
-    };
+    
     "idle_inhibitor" = {
         "format" = "{icon}";
         "format-icons" = {
