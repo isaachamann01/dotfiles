@@ -596,7 +596,7 @@ settings = [{
         "format-alt" = " {ifname} = {ipaddr}/{cidr}";
     };
     "pulseaudio" = {
-        "scroll-step" = 5; // %; can be a float
+        "scroll-step" = 5; 
         "format" = "{icon} {volume}% {format_source}";
         "format-bluetooth" = " {icon} {volume}% {format_source}";
         "format-bluetooth-muted" = "  {icon} {format_source}";
@@ -618,7 +618,7 @@ settings = [{
             "default" = "🎜";
         };
         "escape" = true;
-        "exec" = "$HOME/.config/waybar/mediaplayer.py 2> /dev/null"; // Script in resources folder
+        "exec" = "$HOME/.config/waybar/mediaplayer.py 2> /dev/null"; 
     };
   
 }];
