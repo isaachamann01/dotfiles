@@ -52,7 +52,7 @@
      rofi
      pamixer
      nerdfonts
-     python3
+     #python3
      spotify
      gobject-introspection
      #python311Packages.gi
