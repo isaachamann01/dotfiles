@@ -54,8 +54,13 @@
      nerdfonts
      python3
      spotify
-     pkgs.gobject-introspection
+     gobject-introspection
      #python311Packages.gi
+     gtk3
+     gst_all_1.gstreamer
+    (python3.withPackages (p: with p; [
+      pygobject3 gst-python
+    ]))
   ];
 
   # PYTHON CONFIG
