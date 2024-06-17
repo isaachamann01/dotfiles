@@ -126,10 +126,6 @@
 
     # Autostart
 
-    #Hyprpaper
-    preload = ~/wallpaper.png
-    wallpaper = monitor,~/wallpaper.png
-
     exec-once = hyprctl setcursor Bibata-Modern-Classic 24
     exec-once = dunst
     exec-once = hyprpaper
@@ -740,5 +736,9 @@ settings = [{
 	userSettings = {
 		"window.titleBarStyle"="custom";
 	};
+  };
+
+  services.hyperpaper = {
+    enable = true; 
   };
 }
