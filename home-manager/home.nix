@@ -469,7 +469,7 @@ window#waybar {
 	};
 
 	"pulseaudio"= {
-		"format"= "{icon} {volume=2}%";
+		"format"= "{icon} {volume}%";
 		"format-bluetooth"= "{icon}  {volume}%";
 		"format-muted"= "MUTE";
 		"format-icons"= {
@@ -513,7 +513,7 @@ window#waybar {
 	};
 	"disk"= {
 		"interval"= 5;
-		"format"= "Disk {percentage_used=2}%";
+		"format"= "Disk {percentage_used}%";
 		"path"= "/";
 	};
 	"tray"= {
