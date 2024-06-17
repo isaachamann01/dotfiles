@@ -52,6 +52,8 @@
      rofi
      pamixer
      nerdfonts
+     python3
+     spotify
   ];
 
 
@@ -487,6 +489,14 @@ label:focus {
   -gtk-icon-effect: highlight;
   background-color: #eb4d4b;
 }
+
+.custom-spotify {
+    padding: 0 10px;
+    margin: 0 4px;
+    background-color: #1DB954;
+    color: black;
+}
+
 '';
 settings = [{
         
@@ -497,9 +507,16 @@ settings = [{
     "spacing" = 4; 
     "modules-left" = ["hyprland/workspaces" "custom/media"];
     "modules-center" = ["hyprland/window"];
-    "modules-right" = ["mpd" "idle_inhibitor" "temperature" "cpu" "memory" "network" "pulseaudio" "backlight" "keyboard-state" "tray" "clock"];
+    "modules-right" = ["custom/spotify" "idle_inhibitor" "temperature" "cpu" "memory" "network" "pulseaudio" "backlight" "keyboard-state" "tray" "clock"];
     
-
+    "custom/spotify": {
+    "exec" = "/usr/bin/python3 ~/mediaplayer.py --player spotify"
+    "format" = "{}  "
+    "return-type" = "json"
+    "on-click" = "playerctl play-pause"
+    "on-scroll-up" = "playerctl next"
+    "on-scroll-down" = "playerctl previous"
+    };
 
     "keyboard-state" = {
         "numlock" = true;
@@ -582,10 +599,7 @@ settings = [{
         "format" = "{icon} {temperatureC}°C";
         "format-icons" = ["" "" ""];
     };
-    "backlight" = {
-        "format" = "{icon} {percent}%";
-        "format-icons" = ["" "" "" "" "" "" "" "" ""];
-    };
+
    
     "network" = {
         "format-wifi" = "{essid} ({signalStrength}%) ";
