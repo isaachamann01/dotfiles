@@ -62,7 +62,14 @@
      gtk4
      gst_all_1.gstreamer
     (python3.withPackages (p: with p; [
-      pygobject3 gst-python
+      pygobject3
+      gst-python
+      tensorflow
+      python-binance
+      mysql-connector-python
+      pandas
+      numpy
+      datetime
     ]))
     steam
     pavucontrol
