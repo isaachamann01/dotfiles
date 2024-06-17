@@ -54,6 +54,7 @@
      nerdfonts
      python3
      spotify
+     python311Packages.pip
   ];
 
 
