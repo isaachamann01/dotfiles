@@ -141,7 +141,7 @@
 
     # Autostart
 
-    exec-once = hyprctl setcursor Bibata-Modern-Classic 24
+    #exec-once = hyprctl setcursor Bibata-Modern-Classic 24
     exec-once = dunst
     exec-once = hyprpaper
 
