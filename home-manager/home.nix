@@ -71,6 +71,8 @@
       pandas
       numpy
       datetime
+      jupyter-core
+      notebook
     ]))
     steam
     pavucontrol
