@@ -66,6 +66,7 @@
       #pygobject3
       #gst-python
       tensorflowWithCuda
+      keras
       python-binance
       #mysql-connector
       pandas
